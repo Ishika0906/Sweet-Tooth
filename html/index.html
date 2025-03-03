@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Tooth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: beige;
+            background-image: url(bg2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .navbar {
+            background:  white;
+            padding: 15px;
+            text-align:end;
+          
+        }
+
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: 600;
+           
+        }
+
+        .navbar a:hover{
+            background-color: lightgray;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero {
+            text-align: center;
+            color: rgb(227, 8, 8);
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            font-family: cursive;
+        }
+
+        .content, .shop-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .box {
+            background: #e0dddbfc;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+            width: 250px;
+            height: 340px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .box img {
+            width: 220px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .box a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .box a:hover {
+            color: #5d99d5;
+        }
+
+        .buy-button {
+            background: #ff4500;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .buy-button:hover {
+            transform: scale(1.1);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: white;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .dialog-box {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .dialog-box button {
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            background: #ff4500;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <!-- <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a> -->
+          
+        <a href="../global c project/html/suggestion.html">Suggestions</a>
+        <a href="about.html">About</a>
+    </div>
+
+    <div class="container">
+        <div class="hero">
+            <h1 style="font-family:Georgia, 'Times New Roman', Times, serif;">Welcome to Sweet Tooth</h1>
+            <p style="font-family: cursive;">Tasty and Yummy</p>
+        </div>
+        <div class="content">
+            <div class="box"><a href="../global c project/html/page1.html"><img src="../global c project/image/cinnamon roll2.jpg" alt="Cinnamon Roll"></a> Cinnamon Roll</div>
+            <div class="box"><a href="../global c project/html/page2.html"><img src="cookie2.jpg" alt="Cookie"></a> Cookie</div>
+            <div class="box"><a href="../global c project/html/page3.html"><img src="biscoff.jpeg" alt="Biscoff Cheesecake"></a> Biscoff Cheesecake</div>
+            <div class="box"><a href="../global c project/html/page4.html"><img src="tiramisu2.jpg" alt="Tiramisu"></a> Tiramisu</div>
+            <div class="box"><a href="../global c project/html/page5.html"><img src="f2.jpg" alt="French Toast"></a> French Toast</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="hero">
+            <h1 style="font-family:Georgia, 'Times New Roman', Times, serif;">Shop Our Desserts</h1>
+            <p style="font-family: cursive;">Freshly baked, just for you!</p>
+        </div>
+        <div class="shop-section">
+            <div class="box"><a href="../global c project/html/shop1.html"><img src="../global c project/image/chocolate cake.jpg" alt="Chocolate Cake"></a> Chocolate Cake - $10 <button class="buy-button" onclick="showDialog()">Buy</button></div>
+            <div class="box"><a href="../global c project/html/shop2.html"><img src="../global c project/image/cupcakes.jpg" alt="Cupcakes"></a> Cupcakes - $8 <button class="buy-button" onclick="showDialog()">Buy</button></div>
+            <div class="box"><a href="../global c project/html/shop3.html"><img src="../global c project/image/brownie.jpg" alt="Brownies"></a> Brownies - $7 <button class="buy-button" onclick="showDialog()">Buy</button></div>
+            <div class="box"><a href="../global c project/html/shop4.html"><img src="../global c project/image/macrons.jpg" alt="Macarons"></a> Macarons - $12 <button class="buy-button" onclick="showDialog()">Buy</button></div>
+            <div class="box"><a href="../global c project/html/shop5.html"><img src="../global c project/image/cheesecake1.jpg" alt="Cheesecake"></a> Cheesecake - $15 <button class="buy-button" onclick="showDialog()">Buy</button></div>
+        </div>
+    </div>
+    
+    <div class="footer">&copy; 2025 Sweet Tooth</div>
+
+    <div class="dialog-box" id="dialog">
+        <p>Thank you for shopping with us!</p>
+        <button onclick="closeDialog()">Close</button>
+    </div>
+
+    <script>
+        function showDialog() {
+            document.getElementById('dialog').style.display = 'block';
+        }
+        function closeDialog() {
+            document.getElementById('dialog').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiramisu Recipe</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f6f4eb;
+            margin: 0;
+            padding: 0;
+            color: #4a4a4a;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .text-section {
+            padding: 20px;
+        }
+        .side-by-side {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .full-width {
+            grid-column: span 2;
+            width: 80%;
+            margin: 0 auto;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #8b4513;
+            font-size: 3em;
+            text-align: center;
+            margin-top: 20px;
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: #d2691e;
+            border-bottom: 2px solid #d2691e;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        ul, ol, .info-box {
+            background: #fdfaf6;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        .info-box {
+            font-size: 1.2em;
+            padding: 30px;
+        }
+        img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        li {
+            margin: 10px 0;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tiramisu</h1>
+    <div class="container">
+        <img src="../image/tiramisu.jpg" alt="Delicious Tiramisu">
+        
+        <div class="text-section side-by-side">
+            <div>
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>300g ladyfinger biscuits</li>
+                    <li>250g mascarpone cheese</li>
+                    <li>100g powdered sugar</li>
+                    <li>2 tsp vanilla extract</li>
+                    <li>300ml heavy cream</li>
+                    <li>200ml strong coffee</li>
+                    <li>2 tbsp cocoa powder</li>
+                    <li>2 tbsp coffee liqueur (optional)</li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <h2>What is Tiramisu?</h2>
+                <p>Tiramisu is a classic Italian dessert made with layers of coffee-soaked ladyfingers and a creamy mascarpone mixture. Its name means "pick me up" in Italian, referring to the coffee and cocoa flavors. This rich and decadent treat is best served chilled, making it a perfect dessert for any occasion.</p>
+            </div>
+        </div>
+        
+        <div class="text-section full-width">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Brew strong coffee and let it cool. Add liqueur if using.</li>
+                <li>In a bowl, beat mascarpone, powdered sugar, and vanilla until smooth.</li>
+                <li>Whip heavy cream separately until stiff peaks form, then fold into the mascarpone mixture.</li>
+                <li>Quickly dip ladyfingers in coffee and layer them in a dish.</li>
+                <li>Spread half of the mascarpone mixture over the ladyfingers.</li>
+                <li>Repeat the layers and finish with a dusting of cocoa powder.</li>
+                <li>Refrigerate for at least 4 hours before serving.</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
+    
